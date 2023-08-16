@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Newsletter success form with success message</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background-color: hsl(234, 29%, 20%);
+        }
+
+        .success-wrapper {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            width: 340px;
+            height: 300px;
+            background-color: hsl(0, 0%, 100%);
+            padding-top: 30px;
+            border-radius: 30px;
+            box-shadow: 10px 2px 23px hsl(235, 18%, 26%);
+            padding-left: 30px;
+        }
+        .heading{
+            margin: 10px 0;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        .message{
+            font-size: 13px;
+            color: gray;
+        }
+        button{
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 250px;
+            outline: none;
+            border: none;
+            background-color: rgb(46, 45, 45);
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            
+        }
+        @media screen and (max-width:375px) {
+            .success-wrapper{
+                height: 100vh;
+                width: 100vw;
+                left: 0;
+                top: 0;
+                padding-top: 40px;
+            }
+            .heading{
+                margin: 20px 0;
+            }
+            button{
+                margin-top: 80%;
+            }
+            .img{
+                height: 50px;
+            }
+            .message{
+                font-size: 17px;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body onload="success()">
+    <!-- Sign-up form end -->
+    <div class="success-wrapper">
+        <img src="../assets/images/icon-success.svg" alt="" height="40" class="img">
+        <h1 class="heading">Thanks for subscribing!</h1>
+        <p class="message"> A confirmation email has been sent to <span id="successemail"></span>.
+            Please open it and click the button inside to confirm your subscription.</p>
+        <button>Dismiss message</button>
+    </div>
+    <!-- Success message start -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

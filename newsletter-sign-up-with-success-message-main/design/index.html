@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="signup-form-wrapper">
+    <div class="left-side">
+    <h1 class="signup-heading">Stay updated!</h1>
+    <p class="signup-details"> Join 60,000+ product managers receiving monthly updates on:</p>
+    <div class="signup-check-list">
+      <ul>
+        <li><span class="circle-check"><img src="./assets//images/icon-list.svg" alt=""></span>Product discovery and building what matters</li>
+        <li><span class="circle-check"><img src="./assets//images/icon-list.svg" alt=""></span>Measuring to ensure updates are a success</li>
+        <li><span class="circle-check"><img src="./assets//images/icon-list.svg" alt=""></span>And much more!</li>
+      </ul>
+    </div>
+      <form action="./Suceess.html" name="form1" method="post">
+           <div class="form-inptut">
+            <div class="labels">
+            <label for="email">Email address</label>
+            <p id="error"></p>
+          </div>
+           <input type="email" name="" id="email" />
+           </div>
+           <button onclick="ValidateEmail(document.form1.email)">Subscribe to monthly newsletter</button>
+      </form>
+  </div>
+  <img src="../assets//images/illustration-sign-up-desktop.svg" alt="destop svg" class="bigImg">
+</div>
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gaurav Kumar</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
